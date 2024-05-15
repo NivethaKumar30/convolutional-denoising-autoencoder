@@ -70,7 +70,8 @@ for i in range(1, n + 1):
     ax.get_yaxis().set_visible(False)
 plt.show()
 input_img = keras.Input(shape=(28, 28, 1))
-
+```
+```
 # Write your encoder here
 x = layers.Conv2D(16, (3,3), activation = 'relu', padding='same') (input_img)
 x =layers.MaxPooling2D((2,2), padding='same') (x)
